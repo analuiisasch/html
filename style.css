@@ -1,0 +1,166 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;  /*espaçamento interno*/
+}
+
+.caixa {
+    position: relative; 
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute; /*espaçamento absoluto em relação div e não a página*/
+    top: 110px; /*centralizar menu no meio da imagem*/
+    right: 0; 
+}
+
+nav li {
+    display: inline; /*DEIXAR MESMA LINHA*/
+    margin: 0 0 0 15px; /*ESPAÇAMENTO A ESQUERDA*/
+}
+
+nav a{
+    text-transform: uppercase; /*MAIUSCULO*/
+    color: #000000;
+    font-weight: bold; /*LETRA MAIS GROSSA-REFORÇO*/
+    font-size: 22px;
+    text-decoration: none; /*NENHUMA DECORAÇÃO - SUBLINHADO*/
+}
+
+.produtos{
+    width: 940px; /*tamanho fixo de 940 px*/
+    margin: 0 auto; /*espaçamento lateral de 0 para cima e baixo e automático para os lados*/
+    padding: 50px 0 ; /*espaçamento interno - nao ficar muito grudado no top e zero espacamentos aos lados*/
+}
+.produtos li {
+ display: inline-block;
+ text-align: center; /*alinhar ao centro*/
+ width: 30%;
+ vertical-align: top; /*alinhar ao top - o css por padrao sempre alinha abaixo*/
+ margin: 0 1.5%; /*espaçamento externo - zero para cima e para baixo e 1.5 % para os lados*/
+ background-color: #CCCCCC;
+ padding: 30px 20px; /*espacamento interno - 30px cima e baixo, 20px para os lados*/
+ box-sizing: border-box; /*o espaçamento interno = padding (30px 20px) fica dentro dos width=30%*/
+ /*border-color: red;
+ border-width: 5px;
+ border-syle: dotted;*/
+ border: 2px solid #000000; /*border de maneira unificada*/
+ border-radius: 10px;/*arrendondar cantos - 10px tamanho do raios */
+}
+.produtos li:hover { /*mouse passa por cima da lista de produtos a borda muda de cor*/ 
+     border-color: #c78c19;
+}
+
+.produtos li:active{     /*mouse clicado ou pressionado muda de cor - verde*/
+     border-color: #088c19;
+} 
+
+.produtos li:hover h2{  /*altera o comportamento dos h2 quando o mouse passa pela lista de produtos*/
+     font-size: 40px;
+}
+.produtos h2 {  /*trabalhar com os títulos das listas*/
+    font-size: 30px; /*tamanho fonte*/
+    font-weight: bold; /*peso da fonte - negrito*/
+}
+
+.produto-descricao{
+    font-size: 18px;    
+}
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+}
+footer {
+     text-align: center; 
+    background:url(bg.jpg)
+}
+ .copyright
+  {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+ }
+ /* Página de contato */
+.contato {
+    width: 940px;
+    margin: 40px auto;
+}
+
+.contato label, .input-group legend {
+    display: block;
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+.campo-padrao, textarea {
+    display: block;
+    margin: 0 0 30px;
+    padding: 10px 20px;
+    width: 50%;
+    border: 1px solid #aaa;
+}
+
+.input-group {
+    margin: 0 0 20px;
+}
+
+.newsletter {
+    margin: 0 0 20px;
+}
+
+.botao {
+    margin: 20px 0 0;
+    width: 30%;
+    padding: 10px 20px;
+    font-size: 24px;
+    display: inline-block;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.botao:hover {
+    cursor: pointer;
+    transform: scale(1.2);  
+}
+
+.funcionamento {
+    width: 940px;
+    margin: 0 auto 40px;
+}
+
+table {
+    margin: 10px 0 0;
+}
+
+th  {
+    background: #777777;
+    color: #FFFFFF;
+}
+
+
+td, th {
+    border: 1px solid #000000;
+    padding: 5px 20px;
+}
+.checkbox {
+  margin: 20px 0;
+}
+ .enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 5s;
+  cursor: pointer;
+ }
+ .enviar:hover {
+    background: red;
+ }
